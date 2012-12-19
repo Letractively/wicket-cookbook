@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+  <head>    
+    <title>Wicket Open Hospital Management System</title>    
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="blueprint/screen.css" type="text/css" media="screen, projection"></link>
+    <link rel="stylesheet" href="blueprint/print.css" type="text/css" media="print"></link>
+    <!--[if lt IE 8]><link rel="stylesheet" href="/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <style type="text/css" media="screen">
+        p, table, hr, .box { 
+            margin-bottom:25px; 
+        }
+        .box p { 
+            margin-bottom:10px; 
+        }
+    </style>
+  </head>
+  <body>        
+    <div class="container">
+      <div style="margin-top: 20px">&nbsp;</div>      
+      <h2>Wicket Hospital Management System</h2>      
+        <div id="content" >   	
+		   	  <H3>Hospital Admin (create new doctors or patients)</H3>
+		   	  <hr />		   	  
+		   	  <form wicket:id="form">		   	  
+		   	  	<select wicket:id="operation"></select>		   	  	
+		   	  	<h3>Doctor Name Prefix</h3>
+		   	  	<select wicket:id="name"></select>
+		   	  	
+		   	  	<h3>Provider</h3>
+		   	  	<select wicket:id="provider"></select>		   	  	
+		   	    <div>
+		   	    	<input type="submit" value="Submit" />
+				</div>
+		   	  </form>   	     
+        </div>        
+        <hr />      
+        
+        <h3>Doctor's Available</h3>  
+        <div>
+            <table>
+                <tr wicket:id="rows">
+                    <td style="border: 1px solid #CCC">
+                        <span wicket:id="name"></span>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+        <!-- End of the Doctor Set -->
+        
+     </div>       
+  </body>
+</html>

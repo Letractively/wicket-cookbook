@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Math Services</title>
+    
+    <meta name="Description" content="The Math Service mission is to provide robust math utilities using Google Appengine">
+    <meta name="Keywords" content="google appengine, appengine, math,euler,berlin brown, berlin, ronpaul, paul, ron paul,C++,haskell, java, pi, literate programming, house md, science, astronomy, biology, chemistry, cognitive science, education, mathematics, clean code">
+    
+<style type='text/css'>
+@charset "UTF-8";
+body {
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+
+table tr td {
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 10pt;
+}
+
+</style>
+    
+</head>
+<body>
+<div style="margin: 6px">
+
+    <h3>Math Services on Google Appengine</h3>
+	<p>
+	 Utility math routines from a google appengine application.  This service also acts as an experiment in literate programming.
+	 Source for all of the examples are available.   (version 0.0.2)
+	 <br />
+	 Tested with Google App Engine SDK, 1.6.3	 
+	</p>	
+    <table>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Available Applications:</td>        
+      </tr>
+      <tr>
+        <td>
+        	<a href="/mathservices?func=range&from=0&to=20">Basic Math Utilities</a>
+        	<div>
+        	
+        		<ul>
+        			<li>	
+        				<a href="/mathservices?func=range&from=0&to=20">Range</a> - Print the range of numbers 'from', 'to'. 
+        			</li>        			
+        			<li>	
+        				<a href="/mathservices?func=fib&n=8">Fibonacci</a> - Find the fibonacci number.  Change the parameter 'n' in your browser address bar.
+        				
+        				/ <a href="/fibLiterate.jsp?n=10">(literate example)</a>
+        			</li>        			
+        			<li>	
+        				<a href="/mathservices?func=fib2&n=8">Fibonacci numbers</a> - Print the first set of fibonacci numbers.  Change the parameter 'n' in your browser address bar.
+        			</li>        			
+        			<li>	
+        				<a href="/mathservices?func=sum&n=100">Summation</a> - sum(n).  Change the parameter 'n' in your browser address bar.
+        			</li>        			
+        			<li>	
+        				<a href="/mathservices?func=plus&arg1=10&arg2=12">Add two numbers</a> - plus(x, y).  Change the arguments 'a' and 'b'.
+        				/ <a href="/mathservices?func=times&arg1=10&arg2=12">multiply</a> - multiply(x, y).
+        			</li>        			
+        			<li>	
+        				<a href="/mathservices?func=numbers&n=200">Numbers Database</a> - Interesting numbers.
+        			</li>        		
+        			<li>	
+        				<a href="/mathservices?func=dates&n=200">Dates Database</a> - Interesting dates.
+        			</li>
+        			<li>	
+        				<a href="/demoimage">Mandelbrot Fractal</a> - Image of the mandelbrot fractal (10-15 second render time)
+        			</li>
+        			
+        			<li>	
+        				<a href="/lang.jsp">Octane Simple Stack Programming Language</a> - Input basic programming language routines
+        				/ <a href="/lisp.jsp">simple-scheme</a>
+        				/ <a href="/parser.jsp">simple parser with jflex/cup</a>
+        			</li>
+        		</ul>        		
+        	
+        	</div>
+        	        	        	
+		</td>
+               
+      </tr>                 
+    </table>
+    
+    <h3>Logic Propositions, Question and Answer</h3>
+    
+    <ul>
+    	<li>
+    		<a href="/logic/logicListAllJavaPropositions.jsp">Java Logic Propositions</a>
+    		/ <a href="/logic/logicListAllJavaPropositions2.jsp">(With Answers)</a>
+    		/ <a href="/logic/logicListAllJavaPropositions3.jsp">(Random Sampling)</a>
+    	</li>
+    	
+    	<li>
+            <a href="/logic/sc/logicListAllPropositions.jsp">Math and Science Logic Propositions</a>
+            / <a href="/logic/sc/logicListAllPropositions2.jsp">(With Answers)</a>
+            / <a href="/logic/sc/logicListAllPropositions3.jsp">(Random Sampling)</a>
+        </li>
+    </ul>   
+    
+    <h3>Misc</h3>
+    
+    <ul>
+        <li>
+            <a href="/wicket/quickActivityLog">Quick Web Activity Log</a>        
+        </li>
+        <li>
+            <a href="/wicket">Wicket Open Hospital Management System</a> - Proof of concept web application using Apache Wicket framework.
+        </li>              
+        <li>
+            <a href="/artificialchemistry.jsp">Artificial Chemistry Simulation on Google App Engine</a> - Each colored grid cell represents an artificial chemical element.  Lines are drawn
+    between bonded elements.   A collection of bonded elements represent a molecule.  Over time, common molecules survive through out the life cycle of the simulation.
+        </li>
+    </ul>
+    
+    
+    <table>
+      	<tr>
+        	<td colspan="2" style="font-weight:bold;">Resources:</td>        
+      	</tr>
+   	  	<tr>
+   	  		<td>
+    			<div>
+       				<a href="https://github.com/berlinbrown/physicsforprogrammers/tree/master/projects/MathServices">Source Code (github)</a>
+       				/ <a href="http://code.google.com/p/javanotebook/source/checkout">Source Code (code.google.com)</a> 
+       				/ <a href="src1.html">servlet-src(snapshot1)</a>
+       				<br />
+       				<a href="http://berlinbrowndev.blogspot.com">Blog</a>
+       				<br />
+       				<a href="http://berlinbrowndev.blogspot.com">Google Pages</a>
+    			</div>
+			</td>
+		</tr>
+	</table>    	
+    	    
+	<div style="margin-top: 10px">
+        <img src="imgs/math_img.png" />
+	</div>
+        
+    <p>
+      -- Berlin Brown (berlin dot brown at gmail.com)
+    </p>
+    
+    <p>
+     <a href="misc1.html">More information about top candidates (1)</a>
+     <br />     
+    </p>
+    
+    <p>
+	PublishDate:Mar13_2012: Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 3.0 License.  (C) Copyright 2012 Berlin Brown
+	</p>
+    
+</div>    
+</body>
+</html>
